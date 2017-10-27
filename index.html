@@ -1,1 +1,67 @@
 <!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#start">Start Bootstrap</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="start">
+       <div class="container">
+           <img class="image" src="assets/images/portfolio/profile.png" alt="profile">
+           <div class="texto-input">
+               <span class="name">Start Bootstrap</span>
+               <hr class="star-light">::after</hr>
+               <span class="puesto">Web Developer - Graphic Artist - User Experience Designer</span>
+           </div>
+       </div>
+    </section>
+
+    <section id="Portafolio">
+        <div class="container">
+            <h2 class="text-center">Portafolio</h2>
+            <hr class="star-primary">::after</hr>
+            <div class="row">
+                <div class="colum-4  portafolio-item">
+                    <a class="portafolio-link" href="#portafolioModal1" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa 3x">::before</i>
+                            </div>
+                        </div>
+                        <img class="image" src="assets/images/portfolio/cabin.png" alt="Cabaña">
+                    </a>
+                </div>
+                <div class="colum-4  portafolio-item">
+                    <a class="portafolio-link" href="#portafolioModal2" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x">::before</i>
+                            </div>
+                        </div>
+                        <img class="image" src="assets/image/portfolio/cake.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
