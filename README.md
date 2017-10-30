@@ -19,4 +19,4 @@ Creación de un sitio web interactivo imitando la página de Bootstrap.
 ![Freelancer Website](docs/fullpage.png)
 
 * Puedes ver el [sitio original](https://blackrockdigital.github.io/startbootstrap-freelancer/)
-  sitio original.
+  aquí.
