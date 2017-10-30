@@ -11,15 +11,9 @@
   text-transform: uppercase;
 }
 
-.star-light::before {
-    content: "";
-    display: inline-block;
-    width: 96px;
-    height: 5px;
-    margin-right: 7px;
-    background-color: white;
-    transform: translateY(-165%);
-    }
+
+
+
 /*estilos generales*/
 .container {
     max-width: 1140px;
@@ -52,7 +46,7 @@ img {
 /*estilos de etiquetas generales*/
 body {
 margin: 0;
-font-family: Montserrat;
+font-family: Montserrat, Lato;
 font-size: 1rem;
 font-weight: 400;
 line-height: 1.5;
@@ -60,7 +54,7 @@ color: #212529;
 text-align: left;
 background-color: #fff;
 }
-p{
+p, span{
     font-family: Lato;
     font-size: 17px;
 }
@@ -90,7 +84,7 @@ hr {
 }
 /*clases para la cabecera*/
 header #mainNav {
-    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: Montserrat;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
@@ -215,6 +209,14 @@ section .container .image {
     margin-left: auto;
 }
 
+#start .container .text-initial .name{
+    font-family: Montserrat!important;
+    font-weight: 700px;
+}
+
+#start .container .text-initial .skills{
+    font-family: Lato!important;
+}
 
 /*Estilos de la seccion portfolio*/
 
@@ -332,14 +334,14 @@ background-color: white;
 color:#18bc9c;
 }
 
-/*
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}*/
 /*Estilos contact me*/
+form {
+    display: block;
+    margin-top: 0em;
+    width: 56%;
+    height: 50%;
+    margin-left: 18%;
+}
 .floating-label-form-group input, .floating-label-form-group textarea {
     font-size: 1.5em;
     position: relative;
@@ -364,7 +366,7 @@ a {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
+    color: #aeb0b3;
     background-color: #fff;
     background-image: none;
     background-clip: padding-box;
@@ -614,3 +616,26 @@ li {
     padding-bottom: .5em;
     border-bottom: 1px solid #eee;
 }
+
+
+
+/*estrella*/
+.estrella{
+    max-width: 250px;
+    margin: 25px auto 30px;
+    padding: 0;
+    text-align: center;
+    border: none;
+}
+
+
+
+.star-light::before {
+    content: "";
+    display: inline-block;
+    width: 96px;
+    height: 5px;
+    margin-right: 7px;
+    background-color: white;
+    transform: translateY(-165%);
+    }

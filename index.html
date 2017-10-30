@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <!--cabecera de la página-->
     <header>
         <nav  class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
             <div>
@@ -27,22 +29,29 @@
         </nav>
     </header>
 
+    <!-- Sección inicial o página de inicio-->
     <section id="start">
        <div class="container">
            <img class="image" src="assets/images/profile.png" alt="profile">
-           <div class="texto-input">
+           <div class="text-initial">
                <span class="name text-uppercase">Start Bootstrap</span>
-               
-               <hr class="star-light"::after></hr>
+               <div class="estrella">
+                    <i class="fa fa-star fa-4" aria-hidden="true"></i>
+                    <hr class="star-light"></hr>
+               </div>
                <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
            </div>
        </div>
     </section>
 
+    <!--Sección Portfolio-->
     <section id="portfolio">
         <div class="container">
             <h2 class="text-center text-uppercase">Portfolio</h2>
-            <hr class="star-primary"::after></hr>
+            <div class="estrella">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <hr class="star-primary"></hr>
+            </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a class="portfolio-link" href="#portafolioModal1" data-toggle="modal">
@@ -108,12 +117,14 @@
         </div>
     </section>
 
+    <!--Sección about -->
     <section class="success" id="about">
         <div class="container">
            <h2 class="text-center text-uppercase">About</h2>
-           <hr class="star-light" ::after>
-           
-           </hr>
+           <div class="estrella">
+                <i class="fa fa-star fa-4" aria-hidden="true"></i>
+                <hr class="star-light"></hr>
+           </div>
            <div class="row">
                <div class="col-lg-4 ml-auto">
                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
@@ -123,7 +134,7 @@
                </div>
                <div class="col-lg-8 max-auto text-center">
                    <a href="#" class="btn btn-lg btn-outline">
-                       <i class="fa fa-download"::before></i> download Them
+                       <i class="fa fa-download"::before></i> Download Theme
                    </a>
                </div>
            </div>
@@ -134,7 +145,10 @@
     <section id="contact">
        <div class="container">
           <h2 class="text-center text-uppercase">Contact Me</h2>
-          <hr class="star-primary"::after></hr>
+          <div class="estrella">
+                <i class="fa fa-star fa-4" aria-hidden="true"></i>
+                <hr class="star-primary"></hr>
+           </div>
           <div class="row">
               <div class="col-lg-8 mx-auto">
                   <form name="sentMessage" id="contactForm" novalidate>
@@ -187,6 +201,7 @@
        </div>
     </section>
 
+    <!-- Sección footer-->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
@@ -218,6 +233,8 @@
                 </div>
             </div>
         </div>
+
+        <!--div que muestra el apartado de datos del autor de la página-->
         <div class="footer-below">
             <div class="container">
                 <div class="row">
