@@ -11,6 +11,15 @@
   text-transform: uppercase;
 }
 
+.star-light::before {
+    content: "";
+    display: inline-block;
+    width: 96px;
+    height: 5px;
+    margin-right: 7px;
+    background-color: white;
+    transform: translateY(-165%);
+    }
 /*estilos generales*/
 .container {
     max-width: 1140px;
@@ -330,6 +339,50 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }*/
+/*Estilos contact me*/
+.floating-label-form-group input, .floating-label-form-group textarea {
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    background: 0 0;
+    box-shadow: none!important;
+}
+
+[role=button], a, area, button, input:not([type=range]), label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 
 /*estilos del footer*/
 
