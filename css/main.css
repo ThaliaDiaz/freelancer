@@ -11,9 +11,6 @@
   text-transform: uppercase;
 }
 
-
-
-
 /*estilos generales*/
 .container {
     max-width: 1140px;
@@ -75,14 +72,27 @@ header{
     position: relative;
     left: 90%;   
 }
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
+section .container .image {
+    display: block;
+    margin: 0 auto 20px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
 }
-/*clases para la cabecera*/
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/*estilos para la cabecera*/
 header #mainNav {
     font-family: Montserrat;
     font-weight: 700;
@@ -134,15 +144,6 @@ nav div ul li a{
     font-size: 20px;
 }
 
-.navbar-brand {
-    display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
 a.active, a:active, a:focus, a:hover {
     color: #18bc9c;
     outline: 0;
@@ -155,20 +156,13 @@ nav div{
     display: inline-block;
     margin-left: 80px;
 }
-.navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background: 0 0;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-}
+
 .name{
     font-size: 80px;
 }
 
 
-/*clases para la sección inicial*/
+/*estilos para la sección inicial*/
 
 
 #start{
@@ -180,43 +174,23 @@ nav div{
     outline-color:   red; 
 }
 
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light, hr.star-primary {
-    max-width: 250px;
-    margin: 25px auto 30px;
-    padding: 0;
-    text-align: center;
-    border: none;
-    border-top: solid 5px;
-}
-
 #start .container{
     padding-top: 100px;
     padding-bottom: 100px;
     position: 50%;
 }
 
-
-section .container .image {
-    display: block;
-    margin: 0 auto 20px;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-}
-
 #start .container .text-initial .name{
     font-family: Montserrat!important;
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 #start .container .text-initial .skills{
     font-family: Lato!important;
+    font-size:1.75em;
+    font-weight: 300;
 }
+
 
 /*Estilos de la seccion portfolio*/
 
@@ -231,14 +205,6 @@ section .container .image {
 section h2 {
     font-size: 3em;
     margin: 0;
-}
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 section.success {
@@ -262,13 +228,6 @@ section.success {
     color: #fff;
     border: solid 2px #fff;
     background: 0 0;
-}
-
-.btn-group-lg>.btn, .btn-lg {
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
 }
 
 .btn {
@@ -317,11 +276,10 @@ a, a.active, a:active, a:focus, a:hover {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.p {
+
+p {
     font-size: 20px;
     margin-bottom: 1rem;
-}
-p {
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -386,6 +344,12 @@ button, input, optgroup, select, textarea {
     line-height: inherit;
 }
 
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
 /*estilos del footer*/
 
 footer {
@@ -397,8 +361,13 @@ footer .footer-above {
     background-color: #2c3e50;
 }
 
-footer .footer-above:last-child a{
+
+footer .footer-above .container .row .footer-col .end a{
     color:#18bc9c;
+}
+
+footer .footer-above .container .row .footer-col .end a:hover{
+    background-color: #2c3e50;
 }
 
 footer .footer-above a:hover{
@@ -420,7 +389,9 @@ footer h3 {
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat;
     font-weight: 700;
-    text-transform: uppercase;
+  
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
 
 .h3, h3 {
@@ -430,19 +401,11 @@ h1, h2, h3, h4, h5, h6 {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: .5rem;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 footer .footer-col {
     margin-bottom: 50px;
 }
@@ -476,11 +439,7 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
-/*
-div{
-    display: block;
-    margin: 0;
-}*/
+
 
 #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -521,45 +480,7 @@ div{
     z-index: 2;
 }
 
-/*portfoli*/
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-light, hr.star-primary {
-    max-width: 250px;
-    margin: 25px auto 30px;
-    padding: 0;
-    text-align: center;
-    border: none;
-    border-top: solid 5px;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
-}
-
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
-hr {
-    display: block;
-    unicode-bidi: isolate;
-    -webkit-margin-before: 0.5em;
-    -webkit-margin-after: 0.5em;
-    -webkit-margin-start: auto;
-    -webkit-margin-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-
-/*boton de descraga*/
+/*boton de descarga*/
 
 .fa-fw {
     width: 1.28571429em;
@@ -602,40 +523,70 @@ li {
     background: 0 0;
 }
 
-.fa-download:before {
-    content: "\f019";
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-.floating-label-form-group {
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: .5em;
-    border-bottom: 1px solid #eee;
-}
 
 
 
-/*estrella*/
-.estrella{
-    max-width: 250px;
-    margin: 25px auto 30px;
-    padding: 0;
-    text-align: center;
-    border: none;
-}
-
-
-
-.star-light::before {
+/*Estrella  blanca*/
+.star::before {
     content: "";
     display: inline-block;
-    width: 96px;
+    width: 110px;
     height: 5px;
     margin-right: 7px;
     background-color: white;
     transform: translateY(-165%);
-    }
+   }
+   .star{
+    line-height: 55px;
+   }
+   .star i{
+     color: white;
+   
+   }
+   
+   .star::after {
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width:110px;
+    height: 5px;
+    background-color: white;
+    transform: translateY(-165%);
+   }
+
+   div .star{
+       text-align: center;
+   }
+
+/*Estrella negra*/
+
+.star-black::before {
+    content: "";
+    display: inline-block;
+    width: 110px;
+    height: 5px;
+    margin-right: 7px;
+    background-color:black;
+    transform: translateY(-165%);
+   }
+   .star-black{
+    line-height:55px;
+   }
+   .star-black i{
+     color: black;
+   
+   }
+   
+   .star-black::after {
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width:110px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(-165%);
+   }
+
+   div .star-black{
+       text-align: center;
+   }
