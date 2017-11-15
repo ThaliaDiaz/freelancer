@@ -154,7 +154,7 @@ display: inline-block;
 
 nav div{
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .name{
@@ -361,7 +361,7 @@ button, input {
     overflow: visible;
 }
 
-button, input, optgroup, select, textarea {
+button, input, textarea {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
@@ -412,24 +412,16 @@ footer h3 {
     margin-bottom: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3{
     font-family: Montserrat;
     font-weight: 700;
-  
+    line-height: 1.2;
     margin-top: 0;
     margin-bottom: .5rem;
 }
 
-.h3, h3 {
+ h3 {
     font-size: 1.75rem;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: .5rem;
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 1.2;
-    color: inherit;
 }
 
 footer .footer-col {
@@ -445,6 +437,7 @@ footer .footer-col {
     padding-left: 0;
     list-style: none;
 }
+
 .list-inline-item:not(:last-child) {
     margin-right: 5px;
 }
@@ -466,11 +459,6 @@ ul, menu, dir {
     -webkit-padding-start: 40px;
 }
 
-
-.list-inline {
-    padding-left: 0;
-    list-style: none;
-}
 li {
     display: list-item;
     text-align: -webkit-match-parent;
